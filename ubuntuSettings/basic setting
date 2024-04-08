@@ -72,4 +72,48 @@ sudo apt install libgsettings-qt1
 
 # GitToken
 
-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
+ghp_7GUkiAKm3删除v5JDf0w6HK这些zJoOAh5t就ojbk了2jx13VPtB
+
+> ## 对于基于 Linux 的操作系统[⤴](https://git-scm.com/docs/git-credential-cache)
+>
+> 对于Linux，您需要使用用户名和电子邮件地址配置本地GIT客户端，
+>
+> ```
+> $ git config --global user.name "your_github_username"
+> $ git config --global user.email "your_github_email"
+> $ git config -l
+> ```
+>
+> 配置好GIT后，我们就可以开始使用它来访问GitHub了。例子：
+>
+> ```
+> $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> > Cloning into `YOUR-REPOSITORY`...
+> Username: <type your username>
+> Password: <type your password or personal access token (GitHub)
+> ```
+>
+> 现在将给定记录缓存在您的计算机中以记住令牌：
+>
+> ```
+> $ git config --global credential.helper cache
+> ```
+>
+> 如果需要，您可以随时通过以下方式删除缓存记录：
+>
+> ```
+> $ git config --global --unset credential.helper
+> $ git config --system --unset credential.helper
+> ```
+>
+> 现在尝试拉来`-v`验证
+>
+> ```
+> $ git pull -v
+> ```
+
+> **Linux/Debian** （克隆如下）：
+>
+> ```
+> git clone https://<tokenhere>@github.com/<user>/<repo>.git
+> ```
