@@ -112,7 +112,7 @@ ghp_7GUkiAKm3删除v5JDf0w6HK这些zJoOAh5t就ojbk了2jx13VPtB
 > $ git pull -v
 > ```
 
-> **Linux/Debian** （克隆如下）：
+> **Linux/Debian** （克隆如下）： 
 >
 > ```
 > git clone https://<tokenhere>@github.com/<user>/<repo>.git
