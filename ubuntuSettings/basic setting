@@ -1,0 +1,75 @@
+# Install TLP
+
+:
+
+```sh
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt update
+sudo apt install tlp
+
+# Check what package needed for battery:
+sudo tlp-stat -b
+
+# If acpi_call is recommended
+sudo apt install acpi-call-dkms
+
+# If smapi is recommended
+sudo apt install tp-smapi-dkms
+```
+
+1. Open config file of TLP
+
+   ```
+   sudo gedit /etc/tlp.conf
+   ```
+
+2. Find the lines regarding battery settings, remove the leading # for comment and maybe insert the value you want
+
+   ```
+   START_CHARGE_THRESH_BAT0=75
+   STOP_CHARGE_THRESH_BAT0=80
+   ```
+
+3. Restart tlp
+
+   ```
+   sudo tlp start
+   ```
+
+4. Check the config status
+
+   ```
+   sudo tlp-stat -b
+   ```
+
+# install Sougo
+
+sudo apt update
+
+sudo apt install fcitx
+
+设置fcitx为系统输入法
+
+点击左下角菜单选择语言支持，将语言选择为fcitx（如下图二）
+
+sudo cp /usr/share/applications/fcitx.desktop /etc/xdg/autostart/
+
+ sudo apt purge ibus
+
+sudo dpkg -i 安装包名
+
+sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2
+
+sudo apt install libgsettings-qt1
+
+重启电脑、调出输入法
+
+1.重启电脑
+
+2.查看右上角，可以看到“搜狗”字样，在输入窗口即可且出搜狗输入法。
+
+
+
+# GitToken
+
+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
